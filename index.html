@@ -1,0 +1,91 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container noselector">
+        <div id="author">
+            <h1>Snake Game</h1>
+        </div>
+        <div id="canvas"></div>
+        <div id="ui">
+            <h2>SCORE</h2>
+            <span id="score">00</span>
+        </div>
+        <button id="replay">
+          <i class="fas fa-play"></i> RESTART
+        </button>
+        
+        <div id="gameOverMessage" style="display: none;">
+            <p>Game Over!</p>
+            <p>Your final score is: <span id="finalScore"></span></p>
+           
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTTXxgN1aQ79C3iAFy0zK9p1EjTxr5RtN3hqJ5j8nZn7ZQz7t8gR6O7v8+M6QbA4V7ylvZZrkg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container noselector">
+        <div id="author">
+            <h1>Snake Game</h1>
+        </div>
+
+        <!-- Canvas for the game -->
+        <div id="canvas"></div>
+
+        <!-- Game UI with scoreboard and buttons -->
+        <div id="ui">
+            <div class="scoreboard">
+                <h2>SCORE</h2>
+                <span id="score">00</span>
+            </div>
+
+            <div class="buttons">
+                <button id="pauseResume" aria-label="Pause or Resume Game">
+                    <i class="fas fa-pause" aria-hidden="true"></i> PAUSE
+                </button>
+                <button id="replay" aria-label="Restart Game">
+                    <i class="fas fa-play" aria-hidden="true"></i> RESTART
+                </button>
+                <button id="toggleTheme" aria-label="Toggle between light and dark themes">
+                    <i class="fas fa-adjust" aria-hidden="true"></i> TOGGLE THEME
+                </button>
+            </div>
+        </div>
+
+        <!-- Power-ups section -->
+        <div id="powerUps">
+            <h3>Power-Ups</h3>
+            <button id="speedBoost" aria-label="Activate Speed Boost">Speed Boost</button>
+           
+        </div>
+
+        <!-- Game Over Message -->
+        <div id="gameOverMessage" style="display: none;">
+            <p>Game Over!</p>
+            <p>Your final score is: <span id="finalScore"></span></p>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
