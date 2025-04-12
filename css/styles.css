@@ -1,0 +1,200 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    background-color: #2c2f38;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+#canvas {
+    background-color: #1f212b;
+    display: block;
+    margin: 0 auto;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 255, 204, 0.2);
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 20px;
+}
+
+#ui {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+#score {
+    user-select: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: #4cffd7;
+}
+
+#replay {
+    font-size: 16px;
+    padding: 12px 25px;
+    background: linear-gradient(to right, #4cffd7, #3b8eff);
+    border: none;
+    color: #111;
+    border-radius: 25px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+#replay:hover,
+#replay:focus {
+    transform: scale(1.05);
+    background-color: #65ffe5;
+    outline: none; /* Remove outline on hover/focus */
+}
+
+#replay:focus {
+    box-shadow: 0 0 0 4px rgba(76, 255, 215, 0.5); /* Add focus ring for accessibility */
+}
+
+#pauseResume {
+    font-size: 16px;
+    padding: 12px 25px;
+    background-color: #ff6b6b;
+    border: none;
+    color: #fff;
+    border-radius: 25px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+#pauseResume:hover,
+#pauseResume:focus {
+    transform: scale(1.05);
+    background-color: #ff3f3f;
+    outline: none;
+}
+
+#pauseResume:focus {
+    box-shadow: 0 0 0 4px rgba(255, 107, 107, 0.5);
+}
+
+#toggleTheme {
+    font-size: 16px;
+    padding: 12px 25px;
+    background-color: #3b8eff;
+    border: none;
+    color: #fff;
+    border-radius: 25px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+#toggleTheme:hover,
+#toggleTheme:focus {
+    transform: scale(1.05);
+    background-color: #1a7eff;
+    outline: none;
+}
+
+#toggleTheme:focus {
+    box-shadow: 0 0 0 4px rgba(59, 142, 255, 0.5);
+}
+
+#powerUps {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #3b8eff;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(59, 142, 255, 0.3);
+}
+
+#powerUps h3 {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+#powerUps button {
+    font-size: 16px;
+    padding: 12px 25px;
+    background-color: #ff6b6b;
+    border: none;
+    color: #fff;
+    border-radius: 25px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+#powerUps button:hover,
+#powerUps button:focus {
+    transform: scale(1.05);
+    background-color: #ff3f3f;
+    outline: none;
+}
+
+#powerUps button:focus {
+    box-shadow: 0 0 0 4px rgba(255, 107, 107, 0.5);
+}
+
+#gameOverMessage {
+    text-align: center;
+    color: #ff6b6b;
+    padding-top: 20px;
+    font-size: 18px;
+}
+
+@media (max-width: 600px) {
+    #replay {
+        margin-bottom: 20px;
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    #ui {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    #score {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    #canvas {
+        width: 100%;
+        height: 250px; /* Adjusted canvas size for smaller screens */
+    }
+}
+
+#author {
+    text-align: center;
+    padding-bottom: 15px;
+    font-size: 13px;
+    color: #bbb;
+}
