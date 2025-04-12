@@ -6,7 +6,7 @@
     "start": "node index.js",
     "build": "echo 'Build script not defined yet'",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "npm run build && echo 'Deploying to GitHub Pages...'"
+    "deploy": "gh-pages -d build"
   },
   "author": "Hana Tesfaye",
   "license": "ISC",
@@ -19,7 +19,7 @@
     "canvas"
   ],
   "dependencies": {
-    "express": "^4.17.1" 
+    "express": "^4.17.1"
   },
   "devDependencies": {
     "gh-pages": "^3.2.3"
